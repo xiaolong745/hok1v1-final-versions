@@ -1,0 +1,14 @@
+__pycache__/
+*.py[cod]
+*.pkl
+*.pt
+*.pth
+*.onnx
+*.log
+*.aux
+*.out
+.DS_Store
+.idea/
+.vscode/
+_backup*/
+.r8_*backup*/

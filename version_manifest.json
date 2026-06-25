@@ -1,0 +1,26 @@
+{
+  "repo_purpose": "HOK1v1 final competition version archive and retrospective code comparison",
+  "versions": [
+    {
+      "name": "r5_6_2",
+      "path": "versions/r5_6_2/code",
+      "source": "cloud_paste_r5_6_2_platform_longtrain_patch.txt",
+      "role": "stable tactical semantics and action-priority long-train baseline",
+      "notes": "Frozen R5.3-style observation/model contract; compact 896-dim feature; ordinary target label head."
+    },
+    {
+      "name": "r8_final",
+      "path": "versions/r8_final/code",
+      "source": "R5-temporal-local-map/code",
+      "role": "final R8 low fixed learning-rate self-play version",
+      "notes": "2208-dim R8 feature, multi-value heads, dense tactical reward, ordinary target label head plus action-priority bias."
+    },
+    {
+      "name": "r8_target_attention",
+      "path": "versions/r8_target_attention/code",
+      "source": "r8_final plus model-only target attention patch",
+      "role": "post-contest structural experiment",
+      "notes": "Keeps R8 feature/sample/action contracts; replaces final target MLP head with query-target entity attention. Not checkpoint-compatible with r8_final."
+    }
+  ]
+}
